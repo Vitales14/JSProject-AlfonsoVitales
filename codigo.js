@@ -88,9 +88,14 @@ function programaBase(){
 
     else if (numero == 3){
         let precioBuscado = parseInt(prompt("¿Cuánto está dispuesto a gastar?"))
-        const precioDeseado = productos.filter((precioNuevo) => precioNuevo.precio <= precioBuscado)
-        console.log("Estos son los productos por debajo del precio que busca: ");
-        console.log(precioDeseado);
+        if (precioBuscado >= 349){
+            const precioDeseado = productos.filter((precioNuevo) => precioNuevo.precio <= precioBuscado)
+            console.log("Estos son los productos por debajo del precio que busca: ");
+            console.log(precioDeseado);
+        }
+        else{
+            console.log("No se encuentran productos por debajo del precio solicitado.");
+        }
     }
 
     else {
