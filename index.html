@@ -6,54 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Proyecto Coder</title>
 </head>
 <body>
-    <div class="ps-5 pt-3">
-        <h1>Carrito de compras</h1>
-    </div>
-    <div class="row row-cols-1 row-cols-md-3 g-4 px-5">
-        <div class="col">
-          <div class="card h-100">
-            <img src="./images/productos/airJordan1Mid.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Air Jordan 1 Mid</h5>
-              <p class="card-text">Inspirado en el AJ1 original, el Air Jordan 1 Mid ofrece a los fanáticos la oportunidad de seguir los pasos de MJ. El color flamante bordea los materiales clásicos e impecables y aporta un toque de modernidad a un diseño clásico.</p>
+    <!--HEADER-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light" id="switch">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./images/logito.png" alt="logoEmpresa" width="24" height="24">
+                Full Designs</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown ps-5">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hombre
+                          </a>
+                          <ul class="dropdown-menu" id="dd1">
+                            <li><a class="dropdown-item" href="#">Ropa</a></li>
+                            <li><a class="dropdown-item" href="#">Calzado</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown ps-5">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mujer
+                          </a>
+                          <ul class="dropdown-menu" id="dd2">
+                            <li><a class="dropdown-item" href="#">Ropa</a></li>
+                            <li><a class="dropdown-item" href="#">Calzado</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                          </ul>
+                        </li>
+                        <a href="#" class="btn btn-outline-secondary ms-5" id="botoncito">Dark Mode</a>
+                    </ul>
+                </div>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">$2,999 MXN</small>
+        </nav>
+    </header>
+    
+    <!--MAIN-->
+    <main>
+      <div class="row">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/banner/banner1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/banner/banner2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/banner/banner3.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="./images/productos/jordanAirCadence.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Jordan Air Cadence</h5>
-              <p class="card-text">El Jordan Air Cadence combina una confección artesanal moderna con la destacada herencia de la marca. Fácil de poner y usar todo el día, cuenta con un diseño deportivo y sencillo que es ligero, transpirable y con soporte.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">$1,499 MXN</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="./images/productos/airJordan1ZoomCMFT.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Air Jordan 1 Zoom CMFT</h5>
-              <p class="card-text">Un estilo icónico ahora más cómodo. El Air Jordan 1 Zoom Air Cmft toma el primer Air Jordan y lo rediseña con una amortiguación ligera y de bajo perfil y elementos que mejoran la sensación durante el uso. El cuero y las telas en la parte superior ofrecen una sensación cómoda inmediata. El cuello forrado y acolchado cubre el talón para brindarte un ajuste seguro.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">$3,399 MXN</small>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-<script src="codigo.js"></script>
+      <div class="row rojo">
+          <div class="col">
+            <h2>Hola,</h2>
+          </div>
+          <div class="col">
+            <h2>BB</h2>
+          </div>
+          <div class="col">
+            <h2>GG</h2>
+          </div>
+      </div> 
+    </main> 
+<script src="./codigo.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
