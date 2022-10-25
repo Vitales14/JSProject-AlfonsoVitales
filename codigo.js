@@ -113,7 +113,7 @@ const agregarAlCarrito = (prodId) => {
     }
     else{
     const item = stockProductosHombre.find((prod) => prod.id === prodId)
-    carrito.push(item)
+    carrito.push({...item, cantidad: 1})
     console.log(carrito);
     }
     actualizarCarrito()
