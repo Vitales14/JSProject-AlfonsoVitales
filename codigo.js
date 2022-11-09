@@ -56,6 +56,20 @@ function lightMode(){
     mode = "light";   
 }
 
+function mensajeAgregar(){
+    Toastify({
+        text: "Agregado correctamente",
+        duration: 1600
+        }).showToast();
+}
+
+function mensajeVaciar(){
+    Toastify({
+    text: "Carrito vaciado con éxito",
+    duration: 1600
+    }).showToast();
+}
+
 boton.onclick = () => {
     mode == "light" ? darkMode() : lightMode() ;
     localStorage.setItem("Mode",mode);
@@ -81,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 botonVaciar.addEventListener('click', () => {
+    mensajeVaciar();
     carrito.length = 0
     actualizarCarrito()
     localStorage.removeItem('carrito')
@@ -102,6 +117,7 @@ stockProductosHombre.forEach((producto) => {
 
     boton.addEventListener('click', () => {
         agregarAlCarrito(producto.id)
+        mensajeAgregar();
     })
 })
 
