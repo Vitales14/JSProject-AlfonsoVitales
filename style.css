@@ -93,7 +93,7 @@ body{
 
 .modal-carrito {
     position: relative;
-    background-color: gray;
+    background-image: url(./images/gray.webp);
     min-width: 500px;
     padding: 20px;
     margin-top: -100%;

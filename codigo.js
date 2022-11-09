@@ -138,7 +138,7 @@ const actualizarCarrito = () => {
         div.className = ('productoEnCarrito')
         div.innerHTML = `
         <p>${prod.marca}</p>
-        <p>Precio:$${prod.precio}</p>
+        <p>Precio: $${prod.precio}</p>
         <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
         <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
         `
@@ -151,6 +151,23 @@ const actualizarCarrito = () => {
     contadorCarrito.innerText = carrito.length
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 }
+
+const botonComprar = document.getElementById("comprar-carrito")
+
+    botonComprar.addEventListener('click', () => {
+            Swal.fire({
+                icon: 'error',
+                title: 'ERROR 404',
+                text: 'Lo siento, aún trabajamos en ello',
+                footer: '<a href="">¿Por qué sucede esto? </a>',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
+    })
 
 //CÓDIGO DEL MODAL PARA EL CARRITO
 const contenedorModal = document.getElementsByClassName('modal-contenedor')[0]
