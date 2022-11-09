@@ -22,7 +22,7 @@ let dropdown2 = document.getElementById("dd2");
 let boton = document.getElementById("botoncito");
 let mode = localStorage.getItem("Mode");
 
-//Modo predeterminado (seleccionado previamente)
+//MODO PREDETERMINADO (seleccionado previamente)
 if(mode != null){
     if(mode == "dark"){
         document.body.className = "darkMode"
@@ -36,26 +36,29 @@ else{
     mode = "light";
 }
 
+//FUNCIONES 
+function darkMode(){
+    document.body.className = "darkMode";
+    switchNav.classList.remove("bg-light");
+    switchNav.classList.add("navbar-dark");
+    dropdown1.classList.add("dropdown-menu-dark");
+    dropdown2.classList.add("dropdown-menu-dark");
+    boton.innerText = "Light Mode";
+    mode = "dark"
+} 
+
+function lightMode(){
+    document.body.className = "lightMode";
+    switchNav.classList.remove("navbar-dark");
+    dropdown1.classList.remove("dropdown-menu-dark");
+    dropdown2.classList.remove("dropdown-menu-dark");
+    boton.innerText = "Dark Mode";
+    mode = "light";   
+}
 
 boton.onclick = () => {
-    if(mode == "light"){
-        document.body.className = "darkMode";
-        switchNav.classList.remove("bg-light");
-        switchNav.classList.add("navbar-dark");
-        dropdown1.classList.add("dropdown-menu-dark");
-        dropdown2.classList.add("dropdown-menu-dark");
-        boton.innerText = "Light Mode";
-        mode = "dark";
-    } 
-    else{
-        document.body.className = "lightMode";
-        switchNav.classList.remove("navbar-dark");
-        dropdown1.classList.remove("dropdown-menu-dark");
-        dropdown2.classList.remove("dropdown-menu-dark");
-        boton.innerText = "Dark Mode";
-        mode = "light";        
-    }
-    localStorage.setItem("Mode",mode)
+    mode == "light" ? darkMode() : lightMode() ;
+    localStorage.setItem("Mode",mode);
 }
 
 const contenedorProductosHombre = document.getElementById('contenedor-productosHombre')
