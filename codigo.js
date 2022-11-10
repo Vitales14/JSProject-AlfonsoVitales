@@ -110,6 +110,7 @@ boton.onclick = () => {
 //ya que aquí es donde se obtienen los objetos del DOM para su uso posterior.
 const contenedorProductosHombre = document.getElementById('contenedor-productosHombre')
 const carritoContenedor = document.getElementById('carrito-contenedor')
+const promesita = document.getElementById('promesita')
 
 const botonComprar = document.getElementById("comprar-carrito")
 const botonVaciar = document.getElementById('vaciar-carrito')
@@ -231,8 +232,21 @@ const actualizarCarrito = () => {
               })
     })
 
+function agregandoCupon (){
+        promesita.innerHTML = `
+        <button type="button" class="btn btn-danger"> Clickéame </button>
+    `
+        promesita.addEventListener('click', () => {
+            Swal.fire('Usa el código VITALES para un 25% de descuento')
+        })
 
+}
 
+//agregamos un botón que aparecerá de manera asíncrona mostrando un cupón
+
+setTimeout(()=> {
+    agregandoCupon()
+}, 5000)
 
 //CÓDIGO DEL MODAL PARA EL CARRITO
 //Este código fue buscado de videos directamente para poder hacer que mi carrito de compras
