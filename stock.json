@@ -1,0 +1,120 @@
+[
+    {
+        "id": 1, 
+        "tipo": "ropa", 
+        "marca":"Lacoste", 
+        "img": "./images/productos/playera1.jpg", 
+        "precio": 799, 
+        "descripcion": "Camiseta casual marca Lacoste de algodón", 
+        "color": "negro"
+    },
+    
+    {
+        "id": 2, 
+        "tipo": "ropa", 
+        "marca": "Adidas", 
+        "img": "./images/productos/playera2.jpg", 
+        "precio": 1099, 
+        "descripcion": "Una cómoda sudadera confeccionada en suave felpa francesa", 
+        "color": "negro"
+    },
+    
+    {
+        "id": 3, 
+        "tipo": "ropa", 
+        "marca": "Tommy Hilfiger", 
+        "img": "./images/productos/playera3.jpg", 
+        "precio": 1099, 
+        "descripcion": "Sudadera de cuello redondo con logo de niña", 
+        "color": "azul"
+    },
+    
+    {
+        "id": 4, 
+        "tipo": "ropa", 
+        "marca": "Polo Ralph Lauren", 
+        "img": "./images/productos/playera4.jpg", 
+        "precio": 499, 
+        "descripcion": "Mejor calidad para tu increíble look.", 
+        "color": "negro"
+    },
+    
+    {
+        "id": 5, 
+        "tipo": "calzado", 
+        "marca": "Nike", 
+        "img": "./images/productos/calzado1.png", 
+        "precio": 2099, 
+        "descripcion": "Look fresco, sensación familiar.", 
+        "color": "amarillo"
+    },
+    
+    {
+        "id": 6, 
+        "tipo": "calzado", 
+        "marca": "Nike", 
+        "img": "./images/productos/calzado2.png", 
+        "precio": 1499, 
+        "descripcion": "Diseñado para recorrer las calles con la comodidad y actitud en mente.", 
+        "color": "café"
+    },
+    
+    {
+        "id": 7, 
+        "tipo": "calzado", 
+        "marca": "Nike", 
+        "img": "./images/productos/calzado3.png", 
+        "precio": 2299, 
+        "descripcion": "Un estilo icónico ahora más cómodo.", 
+        "color": "morado"
+    },
+    
+    {
+        "id": 8, 
+        "tipo": "calzado", 
+        "marca": "Reebok", 
+        "img": "./images/productos/calzado4.jpg", 
+        "precio": 1599, 
+        "descripcion": "Todo menos simplicidad.", 
+        "color": "blanco"
+    },
+    
+    {
+        "id": 9, 
+        "tipo": "accesorios", 
+        "marca": "Nike", 
+        "img": "/images/productos/accesorios1.jpg", 
+        "precio": 649, 
+        "descripcion": "Ligera pero audaz.", 
+        "color": "verde"
+    },
+    
+    {
+        "id": 10, 
+        "tipo": "accesorios", 
+        "marca": "Nike", 
+        "img": "/images/productos/accesorios2.jpg", 
+        "precio": 649, 
+        "descripcion": "La bolsa para objetos pequeños Nike Heritage 2.0 cuenta con un diseño duradero con múltiples compartimentos.", 
+        "color": "gris"},
+    
+    {
+        "id": 11, 
+        "tipo": "accesorios", 
+        "marca": "Adidas", 
+        "img": "/images/productos/accesorios3.jpg", 
+        "precio": 1099, 
+        "descripcion": "Una mochila resistente hecha con materiales reciclados", 
+        "color": "negro"
+    },
+    
+    {
+        "id": 12, 
+        "tipo": "accesorios", 
+        "marca": "Adidas", 
+        "img": "/images/productos/accesorios4.jpg", 
+        "precio": 249, 
+        "descripcion": "Este trío de calcetines cortos incorporan un panel acolchado.", 
+        "color": "negro"
+    }
+]
