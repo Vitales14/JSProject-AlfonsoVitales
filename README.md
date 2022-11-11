@@ -1,6 +1,5 @@
 # JSProject-AlfonsoVitales
 Entregas del proyecto final (Carrito de compras)
 
-Esta es la 3ra entrega del proyecto final. Me ha costado muchísimo pero se logró, he agregado el carrito de compras y el dark mode; ambos con el local storage (el cual me ha dado problemitas jaja). De antemano muchas gracias a quiene esté leyendo esto y que tenga bonito día.
-
-P.D: Y muchas gracias a mi tutor de CoderAsk pq sin él no funcionaría la cantidad del carrito jajaja
+Última entrega de mi proyecto final, y la verdad es que me ha costado muchísimo. No solo por la propia dificultad del curso, sino que además me he quedado sin tiempo por problemas personales. Eso me bajoneó un poco ya que no terminé mi proyecto a como me hubiese gustado, espero se entienda eso. Por último agradecer a los tutores de coderAsk que se portaron re amables en las dos ocasiones que he escrito. Finalmente, agradecer a usted por todo lo que nos enseñó y por cómo lo hizo; el curso era bastante difícil pero usted siempre lo hacía parecer sencillo
+Muchas gracias por leerme, y también por evaluar mi trabajo.
