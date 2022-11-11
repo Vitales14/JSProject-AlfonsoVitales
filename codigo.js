@@ -111,6 +111,7 @@ boton.onclick = () => {
 const contenedorProductosHombre = document.getElementById('contenedor-productosHombre')
 const carritoContenedor = document.getElementById('carrito-contenedor')
 const promesita = document.getElementById('promesita')
+const main = document.getElementsByTagName('main')
 
 const botonComprar = document.getElementById("comprar-carrito")
 const botonVaciar = document.getElementById('vaciar-carrito')
@@ -238,15 +239,15 @@ function agregandoCupon (){
     `
         promesita.addEventListener('click', () => {
             Swal.fire('Usa el código VITALES para un 25% de descuento')
+            promesita.remove();
         })
-
 }
 
 //agregamos un botón que aparecerá de manera asíncrona mostrando un cupón
 
-setTimeout(()=> {
+const asincrono = setTimeout(() => {
     agregandoCupon()
-}, 5000)
+},5000)
 
 //CÓDIGO DEL MODAL PARA EL CARRITO
 //Este código fue buscado de videos directamente para poder hacer que mi carrito de compras
